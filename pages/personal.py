@@ -4,7 +4,7 @@ streamlit_style = """
 			<style>
 			@import url('https://fonts.googleapis.com/css2?family=Abel&family=Barlow:wght@300&family=Didact+Gothic&display=swap');
 
-			html, body, [class*="css"]  {
+			*  {
 			font-family: 'Abel', sans-serif;
 			}
 			</style>
