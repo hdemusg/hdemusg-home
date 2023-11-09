@@ -1,5 +1,7 @@
 import streamlit as st
 
+st.set_page_config(page_title="Sumedh Surya Garimella | Industry", page_icon=":briefcase:")
+
 streamlit_style = """
 			<style>
 			@import url('https://fonts.googleapis.com/css2?family=Abel&family=Barlow:wght@300&family=Didact+Gothic&display=swap');

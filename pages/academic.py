@@ -1,6 +1,8 @@
 import streamlit as st
 import base64
 
+st.set_page_config(page_title="Sumedh Surya Garimella | Academic", page_icon=":ledger:")
+
 streamlit_style = """
 			<style>
 			@import url('https://fonts.googleapis.com/css2?family=Abel&family=Barlow:wght@300&family=Didact+Gothic&display=swap');

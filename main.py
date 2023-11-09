@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import base64
 
+st.set_page_config(page_title="Sumedh Surya Garimella", page_icon=":computer:")
+
 streamlit_style = """
 			<style>
 			@import url('https://fonts.googleapis.com/css2?family=Abel&family=Barlow:wght@300&family=Didact+Gothic&display=swap');
