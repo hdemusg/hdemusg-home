@@ -20,17 +20,11 @@ p, i = st.columns(2)
 with p:
     st.subheader("Projects")
     with st.expander("K-Means Clustering Art Generator"):
-        '''
-        Coming soon.
-        '''
-        
-        
+        st.text("Coming soon")
 
 with i:
     st.subheader("Interests")
     with st.expander("Fly Montag (Music)"):
-        st.link_button("Website", "https://flymontag-2767c.web.app")
-        '''
-        Technologies used for website: Firebase, Python Flask
-        '''
+        st.link_button("Website", "orca-app-7udhr.ondigitalocean.app")
+        st.metric("Streams", 4000)
     

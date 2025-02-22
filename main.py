@@ -26,13 +26,14 @@ for i, r in text.iterrows():
     else:
         r['text']
 
-with open("static/resume.pdf", "rb") as f:
-    pdf = f.read()
-    b64pdf = base64.b64encode(pdf).decode("utf-8")
-    st.download_button(label="Download Resume", data=pdf, file_name="SumedhG_resume.pdf", mime='application/octet-stream')
-st.link_button(label="View Resume", url="https://drive.google.com/file/d/1c26ToeDj3YrYxgBprsTj3E-S3Rbqsjej/view?usp=sharing")
+vr, li = st.columns(2)
+with vr: 
+    st.link_button(label="View Resume", url="https://drive.google.com/file/d/1PZITyUveKkRhnSGk_mbv2r8SYaXlOCrY/view?usp=sharing")
+with li:
+    st.link_button(label="LinkedIn", url="https://linkedin.com/in/sumedh-garimella")
+st.text("Last Updated: January 2025")
 
-st.image('hdemusg.png', width=400)
+# st.image('hdemusg.png', width=400)
 
 with st.expander("Tech Stack of this page"):
     st.text("Language: Python")

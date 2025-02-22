@@ -24,7 +24,7 @@ tabs = ["MS Computer Science - Georgia Tech",
         "BS Computer Science - Georgia Tech",
         "Peachtree Ridge HS"]
 
-m, b, h = st.tabs(tabs)
+m, b, h, c = st.tabs(tabs)
 
 with m:
     with st.expander("Overview"):
@@ -34,6 +34,7 @@ with m:
     
     ma, mb, mc = st.tabs(['Coursework', 'Extracurricular', 'Projects'])
     with ma:
+        st.write(
         '''
         **Relevant coursework:** \n
             - Computer Vision \n
@@ -44,6 +45,8 @@ with m:
             - Game AI \n
             - Ubiquitous Computing \n
         '''
+        )
+        
     with mb: 
         '''
         **Graduate Teaching Assistant, Intro to AI (Jan 2022 - May 2023):** \n
@@ -66,7 +69,6 @@ with m:
         '''
 
 with b:
-    st.text("BS Computer Science - Georgia Tech")
     with st.expander("Overview"):
         st.metric("Start Date", "August 2018")
         st.metric("End Date", "May 2022")
@@ -83,8 +85,8 @@ with b:
     with bb: 
         '''
         **Senior Teaching Assistant, Objects and Design (Jan 2022 - May 2023):** \n
-            - Held office hours and graded exams \n
-            - Presented lectures on AI in the medical field \n
+            - Built a website (used by over 1000+ students) for course materials and practice exam questions. \n
+            - Managed a team of 6 other TAs to develop and release regular updates to the content and structure of the website. \n
         '''
     with bc:
         '''
@@ -95,7 +97,32 @@ with b:
         '''
 
 with h:
-    st.text("Coming soon.")
+    with st.expander("Overview"):
+        st.metric("Start Date", "August 2014")
+        st.metric("End Date", "May 2018")
+    ba, bb= st.tabs(['Coursework', 'Extracurricular'])
+    with ba:
+        '''
+        **Relevant coursework:** \n
+            - AP Computer Science \n
+            - Linear Algebra (Georgia Tech) \n
+            - Multivariable Calculus (Georgia Tech) \n
+            - Differential Equations \n
+        '''
+    with bb: 
+        '''
+        **VP of Membership, Peachtree Ridge FBLA (Future Business Leaders of America):** \n
+            - Developed website for members to keep up to date with chapter meetings and deadlines. \n
+            - Managed member data and dues payments for over 100+ chapter members.
+
+        **Programming Lead, FRC Team 1261**
+            - Trained 10+ freshmen in Java fundamentals.
+            - Managed the development of software for 2 functioning competitive robots.
+            - Designed the autonomous functionality of said robots.
+        '''
     
+with c:
+    with st.expander("Certifications"):
+        st.write("MongoDB SI Associate, Capgemini L0 Architect, Databricks Apache Spark for Data Scientists")
 
     
